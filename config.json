@@ -1,0 +1,117 @@
+{
+  "name": "MissingDiaryReport",
+
+  "namespace":"Stanford\\MissingDiaryReport",
+
+  "description": "A toolkit for creating projects with repeating daily survey",
+
+    "authors": [
+    {
+      "name": "Andy Martin",
+      "email": "andy123@stanford.edu",
+      "institution": "Stanford University"
+    },
+    {
+      "name": "Jae Lee",
+      "email": "jael@stanford.edu",
+      "institution": "Stanford University"
+    }
+  ],
+  "permissions": [
+    "hook_save_record"
+  ],
+
+  "links": {
+    "control-center": [
+    ],
+    "project": [
+      {
+        "name": "Generate Report for Missing Entries",
+        "icon": "gear",
+        "url": "GenerateReport.php"
+      }
+    ]
+  },
+
+  "no-auth-pages": [
+  ],
+
+  "system-settings": [
+  ],
+
+  "project-settings": [
+    {
+      "key": "valid_day_numbers",
+      "name": "VALID_DAY_NUMBERS",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "key": "survey_pid",
+      "name": "SURVEY_PID",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_event_arm_name",
+      "name": "SURVEY_EVENT_ARM_NAME",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_pk_field",
+      "name": "SURVEY_PK_FIELD",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_fk_field",
+      "name": "SURVEY_FK_FIELD",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_timestamp_field",
+      "name": "SURVEY_TIMESTAMP_FIELD",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_date_field",
+      "name": "SURVEY_DATE_FIELD",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_day_number_field",
+      "name": "SURVEY_DAY_NUMBER_FIELD",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "survey_form_name",
+      "name": "SURVEY_FORM_NAME",
+      "required":true,
+      "type": "text"
+    },
+    {
+      "key": "start_date_field",
+      "name": "START_DATE_FIELD",
+      "required":true,
+      "type": "field-list"
+    },
+    {
+      "key": "start_date_event",
+      "name": "START_DATE_EVENT",
+      "required": true,
+      "type": "event-list"
+    },
+    {
+      "key": "status",
+      "name": "STATUS",
+      "required":true,
+      "type": "text"
+    }
+
+  ]
+}

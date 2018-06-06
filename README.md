@@ -1,0 +1,1 @@
+# An example module that uses the ACE editor for a json-config
